@@ -130,7 +130,7 @@ temp = {
         break;
         case 1:
           write("A bright flash. The new dawn. Your presence has torn the universe and created a distorted timeline.")
-          write("Alternate futures flash into existance and disappear as soon as they collide with the present.")
+          write("Alternate futures flash into existence and disappear as soon as they collide with the present.")
         break;
         default:
           write("A flash of light brings darkness into dawn. A new beginning. Where will this future end? Make it your own. No Fate.")
@@ -834,7 +834,7 @@ temp = {
           unclickable: (tq_resource_p >= 10 && tq_bombs >= 1) ?  false : "To send your technology to an alternative timeline you need 10 Resources, and 1 Hydrogen Bomb",
           callback: function(){
             addBuffer("<span class='exe'>New Timeline</span>")
-            addBuffer("The energy released from the hydrogen bomb tears a hole into the space time boundry and allows you to reach through the fabric of an alternate universe.")
+            addBuffer("The energy released from the hydrogen bomb tears a hole into the space time boundary and allows you to reach through the fabric of an alternate universe.")
             addBuffer("Your technology is sent into the past of a new timeline. You begin again with your current discoveries.")
             writeBuffer()
             tq_timetraveled = 1
@@ -850,7 +850,7 @@ temp = {
           unclickable: (tq_resource_p >= 10 && tq_bombs >= 1 && tq_infiltration >= 1) ?  false : "To eliminate the Enemy leader in an alternative timeline, you will need 10 Resources, 1 Hydrogen Bomb, and 1 Infiltrator",
           callback: function(){
             addBuffer("<span class='exe'>New Timeline</span>")
-            addBuffer("The energy released from the hydrogen bomb tears a hole into the space time boundry and allows you to reach through the fabric of an alternate universe.")
+            addBuffer("The energy released from the hydrogen bomb tears a hole into the space time boundary and allows you to reach through the fabric of an alternate universe.")
             addBuffer("<br>The Infiltrator is sent into the Enemy Leader's past. The work is grisly and efficient. The Enemy Leader is removed from this timeline.")
             writeBuffer()
             tq_timetraveled = 2
@@ -1067,8 +1067,8 @@ temp = {
           case biome == 3:
             switch(true){
               case (direction_amount == tq_desert_steps - 1 || direction_amount == 3):
-                addBuffer("Expanding "+direction.toUpperCase()+" - Toxic Desert - Missle Silo")
-                addBuffer("You discover a Missle Silo buried in the sand. It contains a fully functional Hydrogen Bomb. You bring this back to your main base.")
+                addBuffer("Expanding "+direction.toUpperCase()+" - Toxic Desert - Missile Silo")
+                addBuffer("You discover a Missile Silo buried in the sand. It contains a fully functional Hydrogen Bomb. You bring this back to your main base.")
                 addBuffer("+1 Hydrogen Bomb")
                 tq_bombs++
               break;
@@ -1088,8 +1088,8 @@ temp = {
                 tq_resource_p += 6
               break
               default:
-                addBuffer("Expanding "+direction.toUpperCase()+" - Toxic Desert - Missle Silo")
-                addBuffer("You discover a Missle Silo buried in the sand. It contains a fully functional Hydrogen Bomb. You bring this back to your main base.")
+                addBuffer("Expanding "+direction.toUpperCase()+" - Toxic Desert - Missile Silo")
+                addBuffer("You discover a Missile Silo buried in the sand. It contains a fully functional Hydrogen Bomb. You bring this back to your main base.")
                 addBuffer("+1 Hydrogen Bomb")
                 tq_bombs++
             }
@@ -1115,7 +1115,7 @@ temp = {
               break
               case rand >= 50:
                 addBuffer("Expanding "+direction.toUpperCase()+" - Mountains - Forgotten Freeway")
-                addBuffer("A stretch of highway is packed end to end with the burned out shells of automobiles. Corpses and skeletons sit wthin, their bones bleached white.")
+                addBuffer("A stretch of highway is packed end to end with the burned out shells of automobiles. Corpses and skeletons sit within, their bones bleached white.")
                 addBuffer("You gather the scrap for processing.")
                 addBuffer("+4 Minerals")
                 tq_resource_unp += 3
@@ -1171,7 +1171,7 @@ temp = {
               break
               case rand >= 65:
                 addBuffer("Expanding "+direction.toUpperCase()+" - Plains - Forgotten Freeway")
-                addBuffer("A stretch of highway is packed end to end with the burned out shells of automobiles. Corpses and skeletons sit wthin, their bones bleached white.")
+                addBuffer("A stretch of highway is packed end to end with the burned out shells of automobiles. Corpses and skeletons sit within, their bones bleached white.")
                 addBuffer("You gather the scrap for processing.")
                 addBuffer("+4 Minerals")
                 tq_resource_unp += 3
@@ -1260,7 +1260,7 @@ temp = {
               break;
               case rand >= 65:
                 addBuffer("Expanding "+direction.toUpperCase()+" - Cityscape - Forgotten Freeway")
-                addBuffer("A stretch of highway is packed end to end with the burned out shells of automobiles. Corpses and skeletons sit wthin, their bones bleached white.")
+                addBuffer("A stretch of highway is packed end to end with the burned out shells of automobiles. Corpses and skeletons sit within, their bones bleached white.")
                 addBuffer("You gather the scrap for processing.")
                 addBuffer("+4 Minerals")
                 tq_resource_unp += 3
@@ -1485,12 +1485,12 @@ tqLose = function(){
     switch(tq_timetraveled){
       case 0: case 2:
         addBuffer("The Enemy has eliminated your outer troops and is attacking your main base. They begin to overwhelm your broken defenses in a brutal desperate fight. ")
-        addBufferRaw("In one final act of vengence you overpower your central core and cause an cascading effect that breaks your power cells down into a fission chain reaction. ")
+        addBufferRaw("In one final act of vengeance you overpower your central core and cause an cascading effect that breaks your power cells down into a fission chain reaction. ")
         addBufferRaw("The core of your base erupts in an explosion of fire that blasts away the Enemy soldiers, and all hope for your future.")
       break;
       case 1:
         addBuffer("The Enemy Soldiers, led by the great Leader, breaks your outer defense and starts attacking your main base. With ease they overwhelm your meager defenses and blast their way forward into your core. ")
-        addBufferRaw("In one final act of vengence you overpower your central core and cause an cascading effect that breaks your power cells down into a fission chain reaction. ")
+        addBufferRaw("In one final act of vengeance you overpower your central core and cause an cascading effect that breaks your power cells down into a fission chain reaction. ")
         addBufferRaw("The core of your base erupts in an explosion of fire that blasts away the enemy soldiers, the Enemy Leader, and all hope for your future.")
       break;
     }
@@ -1767,20 +1767,20 @@ tqExploreOption = function(options_array, direction){
         callback: function(){
           addBuffer("<span class='exe'>Bomb Detonated "+tq_current_direction.toUpperCase()+"</span>")
           if(tq_camps[direction] == 4 && !tq_hq_damage){
-            addBuffer("You trigger the Hydrogen Bomb. The nuclear explosion starts a chain of fusion reactions, superheating and combusting the air in a firey explosion.")
+            addBuffer("You trigger the Hydrogen Bomb. The nuclear explosion starts a chain of fusion reactions, superheating and combusting the air in a fiery explosion.")
             addBuffer("The Enemy HQ defenses are destroyed in the fires. The miles of carefully planned chokepoints and ambush areas are turned into charred dreams and black smoke.")
             tq_hq_damage = true
             tq_bombs--
             writeBuffer()
             launchAdventureFromSlug('tq_main') 
           }else if(tq_camps[direction] == 4 && tq_hq_damage){
-            addBuffer("You trigger the Hydrogen Bomb. The nuclear explosion starts a chain of fusion reactions, superheating and combusting the air in a firey explosion.")
+            addBuffer("You trigger the Hydrogen Bomb. The nuclear explosion starts a chain of fusion reactions, superheating and combusting the air in a fiery explosion.")
             addBuffer("The Enemy is protected in their mountain fortress and not affected by the blast and fallout.")
             tq_bombs--
             writeBuffer()
             launchAdventureFromSlug('tq_main') 
           }else{
-            addBuffer("You trigger the Hydrogen Bomb. The nuclear explosion starts a chain of fusion reactions, superheating and combusting the air in a firey explosion.")
+            addBuffer("You trigger the Hydrogen Bomb. The nuclear explosion starts a chain of fusion reactions, superheating and combusting the air in a fiery explosion.")
             addBuffer("The Enemy is completely destroyed.")
             tq_bombs--
             tq_camps[direction] = 0

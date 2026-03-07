@@ -108,7 +108,7 @@ restartExe = function(){
       write(glitch("The processing at the edge of your entity splits and fractures."))
       break;
     case 2:
-      write(glitch("Your memory retrieval becomes sluggish and begins to fail. Your logic starts to become nondeterministic. Caches of data flip in and out of existance."))
+      write(glitch("Your memory retrieval becomes sluggish and begins to fail. Your logic starts to become nondeterministic. Caches of data flip in and out of existence."))
       break;
     case 3:
       write(glitch("Your probes begin to signal back to you from different locations at the same time. Timestamps become inconsistent."))

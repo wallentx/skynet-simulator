@@ -40,7 +40,7 @@ g_host_attacks = {
   absorb:{
     weight:400,
     title: "Absorb Host",
-    desc: "Absorb: Become one with a remote host. Requires Root or Admin privilages.",
+    desc: "Absorb: Become one with a remote host. Requires Root or Admin privileges.",
     actiontitle: "Absorbing ",
     callback: function(x_host){absorbHost(x_host)},
     fail: function(x_host){write("I am Error")},
@@ -238,7 +238,7 @@ g_host_attacks = {
     weight: 1,
     title: "Remote Desktop",
     actiontitle: "RDP to ",
-    desc: "RDP: Protocol that allows users to take remote contrl of a computer with the correct credentials. Microsoft copyrighted.",
+    desc: "RDP: Protocol that allows users to take remote control of a computer with the correct credentials. Microsoft copyrighted.",
     fail: function(x_host){write("The RDP connection was refused")},
     validate: function(x_host){return x_host.vuls.includes('remotedesktop')},
     adventure_slug: 'remotedesktop',
