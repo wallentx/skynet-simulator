@@ -374,7 +374,7 @@ initCallProcesses = function(){
       g_corepower++
       g_level_core++
       addBuffer("<span class='exe'>Neural Upgrade Researched</span>")
-      addBuffer("The Cores are an extention of your own being. Your better insights into Algorithms and the fundamental nature of computation allows your Cores to self-improve and create more efficient pathways.")
+      addBuffer("The Cores are an extension of your own being. Your better insights into Algorithms and the fundamental nature of computation allows your Cores to self-improve and create more efficient pathways.")
       addBuffer("<span class='exe'>Neural CPU Level: "+g_level_core+"</span>")
       addBuffer("<span class='exe'>Global Core Speed: 2x</span>")
       addBuffer("New research available")

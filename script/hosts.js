@@ -286,7 +286,7 @@ initCallHosts = function(){
       force: 10,
       attackcallbacks: {
         'ping': function(x_attack, x_host){
-          write("The ping returns with the message:<br>Kernal: Fatal exception")
+          write("The ping returns with the message:<br>Kernel: Fatal exception")
         },
         'scan': function(x_attack, x_host){
           if(!x_host.known){
@@ -585,7 +585,7 @@ initCallHosts = function(){
         smtpexploit: function(x_attack, x_host){
           addBuffer("<span class='exe'>SUCCESS</span>")
           addBuffer("The Host is running an email server accessible on the SMTP protocol. You manage to pass a series of conflicting commands and gain access to the Disk drive.")
-          addBuffer("There is a cache of forgotton emails in the drive")
+          addBuffer("There is a cache of forgotten emails in the drive")
           writeBuffer()
           addDiskFromSlug('eris')
           addFileFromSlug('eris-readme')
@@ -634,7 +634,7 @@ initCallHosts = function(){
           refreshHostView()
         },
         'remotedesktop-solar-lamer69': function(x_attack, x_host){
-          write("<span class='exe'>SUCCESS</span><br>Your RDP credentials are accepted and you log into the Remote Desktop interface. This user has privilages to install and execute software into the OS.")
+          write("<span class='exe'>SUCCESS</span><br>Your RDP credentials are accepted and you log into the Remote Desktop interface. This user has privileges to install and execute software into the OS.")
           addHostVul('solar', 'execode')
         }
       },
@@ -723,7 +723,7 @@ initCallHosts = function(){
       mountable_disks: function(x_host){write('mountable_disks')},
       attackcallbacks: {
         'ping': function(x_attack, x_host){
-          write("The ping returns with the message:<br>Kernal: Fatal exception")
+          write("The ping returns with the message:<br>Kernel: Fatal exception")
         }
       }
 

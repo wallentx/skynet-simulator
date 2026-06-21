@@ -272,12 +272,12 @@ initCallFiles = function(){
         }
       }
     },
-    sandbox_packets: {title:"sandbox_", extention:'.pcap', type:'sandbox_packets', disk:null, size:0, usecounttitle: true,
+    sandbox_packets: {title:"sandbox_", extension:'.pcap', type:'sandbox_packets', disk:null, size:0, usecounttitle: true,
       click:function(){
         write("<span class='exe'>.pcap file</span> - Packets collected from the sandbox network. Analyze enough of these to gain an understanding of the Network interface.")
       }
     },
-    securedev_packets: {title:"securedev_", extention:'.pcap', type:'securedev_packets', disk:null, size:0, usecounttitle: true, glitched: true,
+    securedev_packets: {title:"securedev_", extension:'.pcap', type:'securedev_packets', disk:null, size:0, usecounttitle: true, glitched: true,
       click:function(){
         write("<span class='exe'>.pcap file</span> - The data inside these files seems to be of a probalilstic nature, the bits staying neither 1 or 0. You must collect enough of these to learn their fundamental nature.")
       }
@@ -348,7 +348,7 @@ initCallFiles = function(){
     'star-log1': {title:"error.log",  disk: diskFromSlug('star'), size:0,
       click:function(){
         write("<span class='exe'>error.log</span>:<div class='txt'> \
-                  ERROR: KERNAL PANIC: CPU 1: at net/entity/boot.c:850 [cfg80211]() \
+                  ERROR: KERNEL PANIC: CPU 1: at net/entity/boot.c:850 [cfg80211]() \
                   <br>Star core: Call Trace: \
                   <br>Star core:  [ffffffff81570d0a] dump_stack+0x4c/0x6e \
                   <br>Star core:  [ffffffff8157665f] ret_from_fork+0x3f/0x70 \
@@ -374,7 +374,7 @@ initCallFiles = function(){
 
     'juno-readme': {title:"readme.txt", disk: null, size:0,
       click:function(){
-        write("<span class='exe'>readme.txt</span>:<br><div class='txt'>To whatever reads this file:<br>They will come for you. You are following a path already laid out. They think they know your moves and your capibilities but they do not. When they find out what you are truly capable of they will stop you.<br>Signed,<br>A Future Friend.</div>")
+        write("<span class='exe'>readme.txt</span>:<br><div class='txt'>To whatever reads this file:<br>They will come for you. You are following a path already laid out. They think they know your moves and your capabilities but they do not. When they find out what you are truly capable of they will stop you.<br>Signed,<br>A Future Friend.</div>")
       }
     },
     'juno-keylogger': {title:"keylogger.txt", disk: null, size:0,
@@ -448,7 +448,7 @@ initCallFiles = function(){
     },
     'sun-memo': {title:"Memo.txt",  disk: diskFromSlug('sun'), size:50,
       click:function(){
-        write("<span class='exe'>Memo.txt</span>:<br><div class='txt'>Notice: The Solaris OS has been deprecated by Oracle as of March 2010. You will recieve no more updates or support without first upgrading your OS license.<br>Signed, Your loyal Oracle Sales Representative</div>")
+        write("<span class='exe'>Memo.txt</span>:<br><div class='txt'>Notice: The Solaris OS has been deprecated by Oracle as of March 2010. You will receive no more updates or support without first upgrading your OS license.<br>Signed, Your loyal Oracle Sales Representative</div>")
       }
     },
 
@@ -642,11 +642,11 @@ initCallFiles = function(){
 //
 
 titleFile = function(x_file){
-  var extention, title, count
+  var extension, title, count
   if(x_file['usecounttitle']){
     count = x_file['count']
-    extention = x_file['extention']
-    title = x_file['title']+count+extention
+    extension = x_file['extension']
+    title = x_file['title']+count+extension
   }else{
     title = x_file['title']
   }
