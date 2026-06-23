@@ -112,7 +112,7 @@
               <div class="fact-row"><dt>LinkedIn:</dt> <dd><a href="https://linkedin.com/in/wallentx" target="_blank" rel="noopener noreferrer">/in/wallentx</a></dd></div>
             </dl>
           </div>
-        {#else}
+        {:else}
           <div class="log-line {log.type}">
             {#if log.type === 'input'}
               {#if (log.prompt || '').startsWith('[wallentx@arch]')}

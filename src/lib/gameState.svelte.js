@@ -415,7 +415,7 @@ int jailcompat_open_readonly(const char *path);
 Run \`jsh --list-commands\` to see available commands.
 Run \`./wallentx.sh\` to redraw the profile.`;
 
-  const WALLENTX_SH_CONTENT = \`#!/bin/jsh
+  const WALLENTX_SH_CONTENT = `#!/bin/jsh
 # Launch the profile renderer through the jail compatibility layer.
 #
 # The renderer was built for the host profile ABI. This jail exposes a minimal
@@ -424,7 +424,7 @@ Run \`./wallentx.sh\` to redraw the profile.`;
 JAIL_ROOT=/home/wallentx
 LD_PRELOAD="$JAIL_ROOT/.local/lib/libjailcompat.so"
 
-"$JAIL_ROOT/.local/bin/wallentx-fetch"\`;
+"$JAIL_ROOT/.local/bin/wallentx-fetch"`;
 
   const jailedFilesystem = {
     '/home/wallentx': {
